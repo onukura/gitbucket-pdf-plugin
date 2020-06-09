@@ -1,14 +1,17 @@
-import gitbucket.core.plugin.{AccountHook, PluginRegistry}
+import gitbucket.core.plugin.{PluginRegistry}
 import gitbucket.core.service.SystemSettingsService
+import gitbucket.core.service.SystemSettingsService.SystemSettings
 import io.github.gitbucket.solidbase.model.Version
 import javax.servlet.ServletContext
+
+import scala.util.Try
 
 class Plugin extends gitbucket.core.plugin.Plugin {
   override val pluginId: String = "pdf"
   override val pluginName: String = "PDF renderer Plugin"
   override val description: String = "Rendering pdf files."
   override val versions: List[Version] = List(
-    new Version("0.1.0"),
+    new Version("1.0.0"),
   )
 
   private[this] var renderer: Option[PdfRenderer] = None

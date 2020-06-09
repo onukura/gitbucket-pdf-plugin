@@ -32,7 +32,7 @@ class PdfRenderer extends Renderer {
     val basename = f.getName()
 
     s"""
-    <iframe width="400" height="300" src="$path/plugin-assets/pdfjs/web/viewer.html?file=${context.request.getRequestURL + "?raw=true"}">
+    <iframe width="100%" height="100%" src="$path/plugin-assets/pdfjs/web/viewer.html?file=${context.request.getRequestURL + "?raw=true"}">
     """
 
   }
