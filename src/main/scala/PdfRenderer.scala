@@ -31,6 +31,7 @@ class PdfRenderer extends Renderer {
     val f = new io.File(context.currentPath)
     val basename = f.getName()
 
+    // TODO doesn't not work yet ...
     s"""
     <iframe width="100%" height="100%" src="$path/plugin-assets/pdfjs/web/viewer.html?file=${context.request.getRequestURL + "?raw=true"}">
     """
