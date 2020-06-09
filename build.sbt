@@ -1,0 +1,5 @@
+name := "gitbucket-helloworld-plugin"
+organization := "io.github.gitbucket"
+version := "0.1.0"
+scalaVersion := "2.13.0"
+gitbucketVersion := "4.33.0"
