@@ -1,10 +1,8 @@
 # gitbucket-pdf-plugin
 
-A pdf file rendering plugin for GitBucket
-
 [![Build Status](https://travis-ci.org/onukura/gitbucket-pdf-plugin.svg?branch=master)](https://travis-ci.org/onukura/gitbucket-pdf-plugin)
 
-A GitBucket plugin for rendering csv and tsv file.  
+A pdf file rendering plugin for GitBucket based on [PDF.js](https://github.com/mozilla/pdf.js).
 
 ## Screenshot
 
